@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>CROP PESTS AND DISEASES DIAGNOSIS SYSTEM</title>
+		<link rel="stylesheet" type="text/css" href="cssindex.css"/>
+		<style> 
+.glyphicon glyphicon-user{
+float:right;
+color:black;
+
+}
+
+
+		</style>		
+	</head>
+	
+	<body>
+		<div id="headerall">
+		<div id="headertop">
+			<h1><br>CROP PESTS AND DISEASES DIAGNOSIS SYSTEM</h1>
+		</div>
+		<div id="headermiddle">
+			<ul>
+            <li style=" border-right: 1px solid lightgreen"><a href="header.html" target="TOP">HOME</a></li>
+            <li style=" border-right: 1px solid lightgreen"><a href="">ABOUT</a></li>
+		    <li style=" border-right: 1px solid lightgreen"><a href="cropsolutions.html" target="MIDDLE">CROP SOLUTIONS</a>
+		         <ul>
+					 <li><a href="diseasesolutions.html" target="MIDDLE">DISEASE SOLUTIONS</a></li>
+					 <li><a href="pestslutions.php" target="MIDDLE">PESTS SOLUTIONS</a></li>
+				 </ul>
+            </li>
+            <li style=" border-right: 1px solid lightgreen"><a href="expertuploads.php" target="MIDDLE">NEWS AND EVENTS</a></li>
+        </ul>
+        
+        
+        <ul style="float:right">			
+      <li style="  color:#ffffff"><a href="header.html"><span class="glyphicon glyphicon-user"></span> <?php
+
+	    session_start();
+
+	 
+
+	if(!empty($_SESSION["username"]) {
+
+	   print "Hello, {$_SESSION["username"]}";
+
+	}else{
+
+	  print "You're not logged in!!";
+
+	}
+	?> </a></li>
+      <li style=" border-left: 1px solid lightgreen"><a href="index.html" logout='1'" target="blank"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
+        </ul>
+
+    
+     </div>
+     </div>
+</body>
+</html>
+

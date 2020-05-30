@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<script type="text/javascript">
+function joe(){
+	alert("we will get back to you soon ");
+}
+</script>
+
+
+<body>
+<div class="header">
+<h2>Expert Registration</h2>
+</div>
+<form method="post" action="details.php">
+<div class="input-group">
+		<label> FULL NAMES</label></label>
+		<input type="text" name="fullname">
+	</div>
+<div class="input-group">
+		<label>PHONE NUMBER</label>
+		<input type="text" name="phonenumber">
+	</div>
+
+<div class="input-group">
+		<label>APPLICATION LETTER</label>
+		<input type="file" name="applicationletter">
+	</div>
+<div class="input-group">
+		<label>DOCUMENTS</label>
+		<input type="file" name="document" placeholder="attach your cv">
+	</div>
+	<div class="input-group">
+		<label>EMAIL</label>
+		<input type="text" name="email">
+	</div>
+	<div class="input-group">
+		<button type="submit" name="send" class="btn" onclick="joe()">SUBMIT</button>
+	</div>
+	<p>
+		Already a member? <a href="explogin.php">Sign in</a> Else switch to <a href="farmersignup.html">Farmer Register</a>
+	</p>
+</form>
+</body>
+</html>
